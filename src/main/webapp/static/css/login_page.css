@@ -1,0 +1,21 @@
+body{
+    background:url('/alfa_chat_war/static/images/login_page_background.jpg') no-repeat;
+    background-size: 100%;
+}
+.login_container {
+    width: 30%;
+    height: fit-content;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    opacity: .9;
+}
+.login_text_header{
+    margin: 2%;
+}
+.login_text_input{
+    margin: 2%;
+}
+.login_confirm{
+    margin: 2%;
+}
