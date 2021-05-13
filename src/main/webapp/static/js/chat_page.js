@@ -33,9 +33,11 @@ const app = new Vue({
             let element = document.getElementById('messages_box');
             element.scrollTop = element.scrollHeight;
         },
-        closed: function() {
+        logout: function() {
             socket.onclose();
             socket.close();
+            sessionStorage.name = '';
+            window.location.href = "../../index.html"
         },
         connected: function() {
             socket.onopen();

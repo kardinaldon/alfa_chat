@@ -24,6 +24,11 @@ body{
     margin: 2%;
 }
 .send_button{
+    float: left;
+    margin: 2%;
+}
+.logout_button{
+    float: right;
     margin: 2%;
 }
 #messages_box{
@@ -31,4 +36,7 @@ body{
     overflow-y: visible;
     overflow-x: hidden;
     padding: 3%;
+}
+.chat_button_box{
+    height: 50px;
 }

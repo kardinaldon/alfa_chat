@@ -18,8 +18,13 @@
             <div class="chat_window_input">
                 <textarea type="text" v-model="text" /></textarea>
             </div>
-            <div class="send_button">
-                <button @click="sendMessage">SEND</button>
+            <div class ="chat_button_box">
+                <div class="send_button">
+                    <button @click="sendMessage">SEND</button>
+                </div>
+                <div class="logout_button">
+                    <button @click="logout">LOGOUT</button>
+                </div>
             </div>
             <script src="../js/chat_page.js"></script>
     </body>
