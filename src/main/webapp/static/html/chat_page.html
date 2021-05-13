@@ -8,11 +8,9 @@
     </head>
     <body>
         <div class="chat_main_container">
-            <div class="chat_text_header">
-                <b>chat_text_header</b>
-            </div>
             <div class="chat_window_output">
-                <b>chat_window_output</b>
+                <b>Chat server:</b>
+                <b>{{ serverMessage }}</b>
                 <div id = "messages_box">
                     <p class="message" v-for="me in message">{{ me | reverse }}</p>
                 </div>
@@ -23,6 +21,6 @@
             <div class="send_button">
                 <button @click="sendMessage">SEND</button>
             </div>
-        <script src="../js/chat_page.js"></script>
+            <script src="../js/chat_page.js"></script>
     </body>
 </html>

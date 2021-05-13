@@ -4,14 +4,14 @@ const app = new Vue({
         name: ''
     },
     mounted() {
-        if (localStorage.name) {
-            this.name = localStorage.name;
+        if (sessionStorage.name) {
+            this.name = sessionStorage.name;
         }
     },
     methods: {
         persist() {
             if(this.name.length != 0) {
-                localStorage.name = this.name;
+                sessionStorage.name = this.name;
                 window.location.href = "static/html/chat_page.html"
             }
         }
