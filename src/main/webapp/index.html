@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8" />
-    <title>Login page</title>
-    <link rel="stylesheet" href="static/css/login_page.css" />
-</head>
-<body>
-<div class="login_container">
-    <div class="login_text_header">
-        <b>Enter your nickname</b>
-    </div>
-    <div class="login_text_input">
-        <input type="text" size="40">
-    </div>
-    <div class="login_confirm">
-        <input type="submit" value="CONFIRM">
-    </div>
-</div>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Login page</title>
+        <link rel="stylesheet" href="static/css/login_page.css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    </head>
+    <body>
+        <div class="login_container">
+            <div class="login_text_header">
+                <b>Enter your nickname</b>
+            </div>
+            <div class="login_text_input">
+                <input v-model="name" size="40">
+            </div>
+            <div class="login_confirm">
+                <button @click="persist">CONFIRM</button>
+            </div>
+        </div>
+        <script src="static/js/login_page.js"></script>
+    </body>
 </html>
